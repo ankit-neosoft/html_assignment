@@ -1,0 +1,343 @@
+.section{
+	width: 100%;
+	margin: auto;
+}
+
+.header{
+	width: 31%;
+	float: left;
+	
+}
+
+#menu1{
+	
+	color: #808080;
+	font-size: 14px;
+	padding-left: 104px;
+}
+ul#menu1 li{
+	margin-right: 20px;
+}
+
+
+.header2{
+	width:69%;
+	float: left;
+}
+.contact{
+	float: left;
+	padding-left: 200px;
+}
+.srch_logo{
+	float: left;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+ul#menu1 li{
+	display: inline;
+
+}
+
+.row{
+	width: 72%;
+	margin: auto;
+}
+.row2{
+	position: relative;
+}
+
+.row3{
+	width: 60%;
+}
+
+span#line1{
+	color: white;
+	font-size: 24px;
+	margin: auto;
+	position: absolute;
+	top: 40%;
+}
+
+span#line2{
+	
+	background-color: #696969;
+	width:130px;
+	border: 2px solid white;
+	padding: 13px 0px 20px 30px;
+	border-radius: 6px;
+	
+}
+
+
+p{
+	color: grey;
+}
+
+h4{
+	color: white;
+}
+.grey_bg{
+	background-color: #A9A9A9;
+
+}
+
+.img1_section{
+	height: 448px;
+	background: url('../images/vdo_img1.png') no-repeat center center fixed;
+	
+}
+
+.play_btn1{
+	width: 50%;
+	float: left;
+}
+.play_btn2{
+	width: 50%;
+	float: left;
+}
+
+
+span#play_btn{
+	position: absolute;
+	background-color: #9ACD32;
+	width:100px;
+	height:60px;
+	border: 0px solid white;
+	padding: 13px 0px 13px 30px;
+	border-radius: 0px;
+	left: 310px;
+	top: 370px;
+	opacity: 0.7;
+}
+
+span#play_btn2{
+	position: absolute;
+	background-color: #ADFF2F;
+	width:210px;
+	height:30px;
+	border: 0px solid white;
+	padding: 13px 0px 13px 30px;
+	border-radius: 10px;
+	right: 305px;
+	top: 470px;
+	color: white;
+	font-size: 20px;
+	}
+
+	span#play_btn3{
+	position: absolute;
+	background-color: #ADFF2F;
+	width:210px;
+	height:30px;
+	border: 0px solid white;
+	padding: 13px 0px 13px 30px;
+	border-radius: 10px;
+	
+	color: white;
+	font-size: 20px;
+	}
+
+.detail{
+		position: absolute;
+		left: 640px;
+		top: 300px;
+		font-size: 35px;
+		opacity: 0.8;
+	}
+
+
+.btn{
+width: 200px;
+height: 60px;
+background-color: #9ACD32;
+opacity: 0.7;
+}
+
+
+.about{
+	margin-left: 40px;
+	margin-top: 80px;
+	width: 50%;
+	word-wrap: break-word;
+	float: left;
+	margin-bottom: 80px;
+}
+
+.about_img{
+	float: left;
+	
+	width: auto;
+}
+
+img#about_img{
+	width: 350px;
+	height: 300px;
+	margin-left: 40px;
+	margin-top: 200px;
+	margin-bottom: 80px;
+	border: 8px solid lightgrey;
+}
+
+ul#list1{
+    list-style-image: url('../images/arrow1.png');
+}
+ul#post{
+    list-style-image: url('../images/icon8.png');
+    color: grey;
+}
+
+ul#tweet{
+    list-style-image: url('../images/icon9.png');
+    color: grey;
+}
+
+h1{
+	font-family: serif;
+}
+
+div.mid1{
+	height: 510px;
+	background-image: url('../images/mid_img1.png');
+	border: 1px solid yellow;
+}
+
+div.mid2{
+	background-image: url("../images/content1.png");
+	height: 730px;
+	background-size: cover;
+	border: 0px solid #F7EAEA;
+	background-repeat: no-repeat;
+	margin: 40px 0 0 0 ;
+}
+div.mid3{
+	height: 520px;
+	background-image: url('../images/mid_img3.jpg');
+	border: 0px solid yellow;
+	
+}
+
+.clear{
+	clear: both;
+}
+
+#para1{
+	font-size: 23px;
+	text-align: center;
+	margin: 0px 0 0 50px;
+	color: grey;
+}
+
+.box{
+	width: 90%;
+	margin: auto;
+}
+.box1{
+	float: left;
+	background-color: white;
+	width: 300px;
+	height: 330px;
+	border-radius: 2px;
+	padding: 35px;
+	margin: 0 10px 0px 50px;
+	color: grey;
+	text-align: center;
+}
+.box2{
+	float: left;
+	background-color: white;
+	width: 300px;
+	height: 330px;
+	border-radius: 2px;
+	padding: 35px;
+	
+	color: grey;
+	text-align: center;
+}
+
+
+.left_arrow{
+	float: left;
+	width: 20%;
+	
+
+}
+img#prev_btn{
+	padding-top: 100%;
+	padding-left: 95%;
+	
+
+}
+.middle_content{
+	float: left;
+	width: 60%;
+	color: white;
+}
+img#mid_img{
+	width: 165px;
+	height: 175px;
+}
+img#next_btn{
+	padding-top: 100%;
+}
+h1#client{
+	margin-top: 70px;
+}
+
+
+.right_arrow{
+	float: left;
+	width: 20%;
+}
+
+
+
+.profile1{
+	float: left;
+	width: 32%;
+	padding-right: 2%;
+}
+.profile2{
+	float: left;
+	width: 32%;
+	padding-right: 2%;
+}
+.profile3{
+	float: left;
+	width: 32%;
+}
+
+.pre_bottom1{
+	width: 50%;
+	float: left;
+}
+.pre_bottom2{
+	width: 50%;
+	float: left;
+}
+
+.sec2{
+	background-color: #323232;
+}
+
+h3#short{
+padding-top: 50px;
+}
+
+div.bottom_col1{
+	width: 32%;
+	float: left;
+}
+.bottom_col2{
+	width: 32%;
+	float: left;
+}
+.bottom_col3{
+	width: 32%;
+	float: left;
+}
+
+.sec3{
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
