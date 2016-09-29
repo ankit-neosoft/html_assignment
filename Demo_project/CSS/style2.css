@@ -6,6 +6,7 @@
 .header{
 	width: 31%;
 	float: left;
+	height: 100px;
 	
 }
 
@@ -64,6 +65,9 @@ ul#menu1 li{
 }
 .row2{
 	position: relative;
+	padding-left: 65px;
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 
 h2#long{
@@ -101,7 +105,7 @@ span#line1{
 	font-size: 24px;
 	margin: auto;
 	position: absolute;
-	top: 40%;
+	top: 30%;
 }
 
 span#line2{
@@ -109,7 +113,7 @@ span#line2{
 	background-color: #696969;
 	width:130px;
 	border: 2px solid white;
-	padding: 7px 13px 13px 15px;
+	padding: 5px 11px 12px 11px;
 	border-radius: 6px;
 }
 
@@ -128,7 +132,8 @@ h4.step{
 }
 .grey_bg1{
 	background-color: #A9A9A9;
-	margin-top: 50px;
+	margin-top: 40px;
+	height: 105px;
 
 }
 
@@ -269,7 +274,7 @@ div.mid1{
 
 div.mid2{
 	background-image: url("../images/content1.png");
-	height: 730px;
+	height: 685px;
 	background-size: cover;
 	border: 0px solid #F7EAEA;
 	background-repeat: no-repeat;
@@ -473,7 +478,8 @@ h1#client{
 }
 
 .pre_bottom1{
-	
+margin-top: -19px;
+padding-top: 30px;	
 	
 }
 .pre_bottom2{
