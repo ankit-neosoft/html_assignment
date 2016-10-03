@@ -1,3 +1,13 @@
+a{
+	color: grey;
+	text-decoration: none;
+}
+
+a:hover{
+	color: green;
+	text-decoration: none;
+}
+
 .section{
 	width: 100%;
 	margin: auto;
@@ -30,7 +40,6 @@ ul#menu1 li{
 	padding-left: 200px;
 }
 .srch_logo{
-	
 	float: left;
 	margin-top: 15px;
 	margin-left: 5px;
@@ -44,7 +53,6 @@ position: absolute;
 
 	padding: 10px 15px 10px 10px;
 	background-position: 185px 7px;
-	background-image: url(../images/top_search.png);
 	background-repeat: no-repeat;
 	border: 2px solid #ccc;
 }
@@ -117,6 +125,17 @@ span#line2{
 	border-radius: 6px;
 }
 
+span#line2:hover{
+	
+	background-color: white;
+	width:130px;
+	border: 2px solid white;
+	padding: 5px 11px 12px 11px;
+	border-radius: 6px;
+}
+
+
+
 img#btn{
 	padding: 15px 0px 0px 30px;
 }
@@ -155,6 +174,8 @@ h4.step{
 	width: 50%;
 	float: left;
 }
+
+
 .play_btn2{
 	width: 50%;
 	float: left;
@@ -173,6 +194,10 @@ span#play_btn{
 	top: 370px;
 	opacity: 0.7;
 }
+
+
+
+
 
 span#play_btn2{
 	position: absolute;
@@ -274,7 +299,7 @@ div.mid1{
 
 div.mid2{
 	background-image: url("../images/content1.png");
-	height: 685px;
+	height: 580px;
 	background-size: cover;
 	border: 0px solid #F7EAEA;
 	background-repeat: no-repeat;
@@ -307,7 +332,8 @@ div.mid3{
 	float: left;
 	background-color: white;
 	width: 300px;
-	height: 330px;
+	min-height: 330px;
+	height: auto;
 	border-radius: 2px;
 	padding: 35px;
 	margin: 0 10px 0px 50px;
@@ -318,10 +344,10 @@ div.mid3{
 	float: left;
 	background-color: white;
 	width: 300px;
-	height: 330px;
+	min-height: 330px;
+	height: auto;
 	border-radius: 2px;
 	padding: 35px;
-	
 	color: grey;
 	text-align: center;
 }
