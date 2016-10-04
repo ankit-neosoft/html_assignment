@@ -40,7 +40,9 @@ a:hover{
 	margin: auto;
 }
 
-
+.play-desc{
+	margin-top: 5%;
+}
 
 .logo-img{
 	width: 320px;
@@ -86,7 +88,8 @@ padding-right: 30px;
 	height: 80px;
 	border: 0px solid white;
 	opacity: 0.7;
-	margin-top: 120px;
+	margin-top: 35%;
+
 }
 
 .btn-default.play-btn:hover{
@@ -99,34 +102,22 @@ padding-right: 30px;
 }
 
 
-.btn-default{
-	padding: 12px;
-    width: 175px;
+.box-btn{
     margin-top: 25px;
 }
 
 .section3{
 	background: url('../images/video-img.png') no-repeat fixed;
-	height: 520px;
+	min-height: 470px;
+	height: auto;
 	background-repeat: no-repeat;
-	padding-top: 75px;
+	
 }
 
 .section4{
 	min-height: 650px;
 }
 
-.get-btn.contact-btn {
-    width: 230px;
-    height: 60px;
-    font-size: 18px;
-}
-
-.get-btn.contact-btn:hover {
-    width: 230px;
-    height: 60px;
-    font-size: 18px;
-}
 
 .nav-menu:hover{
 	color:green;
@@ -136,7 +127,7 @@ padding-right: 30px;
 	width: 350px;
     height: 310px;
     border: 8px solid lightgrey;
-    margin-top: 50%;
+    margin-top: 40%;
 }
 
 .section5{
@@ -246,7 +237,7 @@ height: 50px;
 
 .section7{
 	background-image: url('../images/content1.png');
-	min-height: 670px;
+	min-height: 720px;
 	height: auto;
 	margin-bottom: -30px;
 }
@@ -261,12 +252,12 @@ height: 50px;
 	margin-bottom: 30px;
 }
 
-.col-lg-6{
+.box1{
 	background-color: white;
 	min-height: 450px;
 	height: auto;
 	margin-right: 10px;
-	width: 48%;
+	
 	text-align: center;
 	padding-top: 45px;
 	padding-bottom: 30px;
@@ -407,24 +398,13 @@ a{
 	background-color: #93CC3C;
 }
 
-.get-btn{
-	color: white;
-	background-color: #93CC3C;
-	width: 200px;
-	height: 42px;
-}
-.get-btn:hover{
-	color: white;
-	background-color: green;
-	width: 200px;
-	height: 42px;
-}
 
 .grey-btn{
 	color: white;
 	background-color: grey;
 	border: 2px solid white;
-	width: 150px;
+	
+	vertical-align:baseline;
 }
 
 .book-btn {
