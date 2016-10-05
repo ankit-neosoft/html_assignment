@@ -303,6 +303,28 @@ img#client-circle1 {
 
 }
 
+.btn-left{
+	margin-top: 10%;
+}
+
+.client-say{
+	padding-top: 3%;
+}
+
+.client-pic{
+	margin-top: 5%;
+	position: relative;
+}
+
+.client-pic2{
+	position: absolute;
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	left: 23%;
+	top: 9%;
+}
+
 .client-circle{
 	position: relative;
 	width: 200px;
@@ -385,6 +407,12 @@ a{
 	color: white;
 }
 
+.vcenter{
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 
 .read-btn {
     color: #93CC3C;    
@@ -437,8 +465,8 @@ background-color: #333333
 	color: white;
 	font-size: 22px;
 	font-family: serif;
-	margin-top: 50px;
-	padding-left: 25px;
+	margin-top: 75px;
+	padding-left: 8px;
 }
 
 .col-md-6{
@@ -463,6 +491,10 @@ background-color: #333333
 
 }
 
+.vital-intro{
+	margin-top: 1px;
+    margin-bottom: 30px;
+}
 
 ul#post{
     list-style-image: url('../images/icon8.png');
