@@ -38,12 +38,7 @@ function validity()
 
 	var officeNo=document.myForm.office.value;
 
-	if (officeNo=="") 
-	{
-		alert("Please enter office number");
-		document.myForm.office.focus();
-		return false;
-	}
+	
 
 	if(isNaN(officeNo))
 	{
@@ -108,7 +103,7 @@ function validity()
 		return false;
 	}
 
-	var mnth=document.myForm.month.value;
+	var Mnth=document.myForm.month.value;
 	var dy=document.myForm.day.value;
 	var yr=document.myForm.year.value;
 
@@ -132,12 +127,6 @@ function validity()
 		document.myForm.year.focus();
 		return false;
 	}
-
-
-	
-
-
-
 
 	var radio1 = document.getElementById('residence1').checked;
 	var radio2 = document.getElementById('residence2').checked;
@@ -165,11 +154,27 @@ function validity()
 		document.myForm.about.focus();
 		return false;
 	}
+	else
+	{
+		alert("Your form has been submited");
+		return true;
+	}
+}
 
 
 
 
+function ageVal()
+{
+	var Mnth=document.myForm.month.value;
+	var dy=document.myForm.day.value;
+	var yr=document.myForm.year.value;
 
+	var d = new Date(yr,Mnth,dy);
+	var dd = new Date();
+	var ddd = (dd - d)/(1000 * 60 * 60 * 24 * 365.2425);
+	var date1=Math.round(ddd * 10 ) / 10;
+	document.myForm.age.value=date1;
 }
 
 

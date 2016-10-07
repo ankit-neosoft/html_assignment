@@ -25,7 +25,7 @@
 <script src="js/script.js" type="text/javascript"></script>
 
 
-<script src="js/myjs.js"></script>
+<script src="js/myjs2.js"></script>
 
 
 
@@ -126,7 +126,7 @@
 			<div class="contect_text">So we can successfully match your details with suitable people, we first need to collect some information about you. Read each question carfully and  select or place a tick in the box for each of your characteristics. Please answer as honestly as you can, otherwise you may be disappointed with your matches and they with you.</div>
 
 			<div class="form_container_block">
-				<form action="val.html" name="myForm" method="post" onsubmit="return validity()">
+				<form action="val.html" name="myForm" method="post" onsubmit="return validity();">
 
 				<ul>
 					<li class="fileds">
@@ -171,18 +171,18 @@
 									<li>
 										<select name="month" class="select month">
 											<option value="-1" selected>Month</option>
-											<option value="jan">Jan</option>
-											<option value="feb">Feb</option>
-											<option value="march">March</option>
-											<option value="april">April</option>
-											<option value="may">May</option>
-											<option value="june">June</option>
-											<option value="july">July</option>
-											<option value="aug">Aug</option>
-											<option value="sep">Sep</option>
-											<option value="oct">Oct</option>
-											<option value="nov">Nov</option>
-											<option value="dec">Dec</option>
+											<option value="1">Jan</option>
+											<option value="2">Feb</option>
+											<option value="3">March</option>
+											<option value="4">April</option>
+											<option value="5">May</option>
+											<option value="6">June</option>
+											<option value="7">July</option>
+											<option value="8">Aug</option>
+											<option value="9">Sep</option>
+											<option value="10">Oct</option>
+											<option value="11">Nov</option>
+											<option value="12">Dec</option>
 										</select>
 									</li>
 									<li>
@@ -227,36 +227,36 @@
 									<li>
 										<select name="year" class="select year">
 											<option value="-1" selected>Year</option>
-											<option value="1">1970</option>
-											<option value="2">1971</option>
-											<option value="3">1972</option>
-											<option value="4">1973</option>
-											<option value="5">1974</option>
-											<option value="6">1975</option>
-											<option value="7">1976</option>
-											<option value="8">1977</option>
-											<option value="9">1978</option>
-											<option value="10">1979</option>
-											<option value="11">1980</option>
+											<option value="70">1970</option>
+											<option value="71">1971</option>
+											<option value="72">1972</option>
+											<option value="73">1973</option>
+											<option value="74">1974</option>
+											<option value="75">1975</option>
+											<option value="76">1976</option>
+											<option value="77">1977</option>
+											<option value="78">1978</option>
+											<option value="79">1979</option>
+											<option value="80">1980</option>
 
-											<option value="12">1981</option>
-											<option value="13">1982</option>
-											<option value="14">1983</option>
-											<option value="15">1984</option>
-											<option value="16">1985</option>
-											<option value="17">1986</option>
-											<option value="18">1987</option>
-											<option value="19">1988</option>
-											<option value="20">1989</option>
-											<option value="21">1990</option>
-											<option value="22">1991</option>
-											<option value="23">1992</option>
-											<option value="24">1993</option>
-											<option value="25">1994</option>
-											<option value="26">1995</option>
-											<option value="27">1996</option>
-											<option value="28">1997</option>
-											<option value="29">1998</option>
+											<option value="81">1981</option>
+											<option value="82">1982</option>
+											<option value="83">1983</option>
+											<option value="84">1984</option>
+											<option value="85">1985</option>
+											<option value="86">1986</option>
+											<option value="87">1987</option>
+											<option value="88">1988</option>
+											<option value="89">1989</option>
+											<option value="90">1990</option>
+											<option value="91">1991</option>
+											<option value="92">1992</option>
+											<option value="93">1993</option>
+											<option value="94">1994</option>
+											<option value="95">1995</option>
+											<option value="96">1996</option>
+											<option value="97">1997</option>
+											<option value="98">1998</option>
 
 										</select>
 									</li>
@@ -266,13 +266,13 @@
 					<li class="fileds">
 						<div class="age_fileds">
 							<label>Age</label>
-							<input name="age" type="text" /> 
+							<input name="age" type="number" step="0.1" disabled /> 
 						</div>
 						<div class="gender_fileds">
 							<label>Gender</label>
 							<ul>
-								<li><input type="radio" class="radio" id="residence1" name="gender" /><label class="radio-label" for="residence1">Male</label></li>
-								<li><input type="radio" class="radio" id="residence2" name="gender" /><label class="radio-label" for="residence2">Female</label></li>
+								<li><input type="radio" class="radio" id="residence1" name="gender1" onclick="ageVal()" /><label class="radio-label" for="residence1">Male</label></li>
+								<li><input type="radio" class="radio" id="residence2" name="gender2" /><label class="radio-label" for="residence2">Female</label></li>
 							</ul>	
 						</div>
 					</li>
@@ -287,7 +287,7 @@
 						</div>
 						<div class="about_you_fileds">
 						<label>About you</label>
-						<textarea></textarea>
+						<textarea name="about"></textarea>
 						</div>						
 					</li>
 				</ul>
