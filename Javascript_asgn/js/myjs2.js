@@ -58,7 +58,7 @@ function validity()
 	var atpos = emailID.indexOf("@");
 	var dotpos = emailID.lastIndexOf(".");
 
-	if(atpos<1 || dotpos<atpos+2 || dotpos+2>=emailID.length || emailID.match(/\.{2}/) || emailID.match(/@@/g) )
+	if(atpos<1 || dotpos<atpos+2 || dotpos+2>=emailID.length || emailID.match(/\.{2}/) || emailID.match(/@@/g) || (emailID.match(/@/g).length )>1)
 	{
 		alert("Please enter valid Email ID");
 		document.myForm.email.focus();
