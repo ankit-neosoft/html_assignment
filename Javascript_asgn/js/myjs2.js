@@ -166,6 +166,8 @@ function validity()
 
 function ageVal()
 {
+	if(!yr=="")
+	{
 	var Mnth=document.myForm.month.value;
 	var dy=document.myForm.day.value;
 	var yr=document.myForm.year.value;
@@ -175,6 +177,8 @@ function ageVal()
 	var ddd = (dd - d)/(1000 * 60 * 60 * 24 * 365.2425);
 	var date1=Math.round(ddd * 10 ) / 10;
 	document.myForm.age.value=date1;
+	}
+	
 }
 
 
