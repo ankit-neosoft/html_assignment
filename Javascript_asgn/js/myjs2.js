@@ -172,14 +172,15 @@ function ageVal()
 	var month=document.myForm.month.value;
 	var day=document.myForm.day.value;
 	var year=document.myForm.year.value;
-
-	var DOB = new Date(year,month,day);
-	var currrentDate = new Date();
-	var ageTemp = (currrentDate - DOB)/(1000 * 60 * 60 * 24 * 365.2425);
-	var age=Math.round(ageTemp * 10 ) / 10;
-	document.myForm.age.value=age;
-	
-	
+	if(!(month=="-1" || day=="-1" || year=="-1"))
+	{
+		var DOB = new Date(year,month,day);
+		var currrentDate = new Date();
+		var ageTemp = (currrentDate - DOB)/(1000 * 60 * 60 * 24 * 365.2425);
+		var age=Math.round(ageTemp * 10 ) / 10;
+		document.myForm.age.value=age;	
+	}
+		
 }
 
 
