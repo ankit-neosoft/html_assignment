@@ -1,4 +1,5 @@
-function validity() {
+function validity()
+{
 	if(document.myForm.firstname.value=="")
 	{
 		alert("Please provide your firstname!");
@@ -13,22 +14,22 @@ function validity() {
 		return false;
 	}
 
-	var phone= document.myForm.phone.value;
+	var ph= document.myForm.phone.value;
 
-	if (phone=="")  
+	if (ph=="")  
 	{
 		alert("Please enter 10 digit phone number.");
 		document.myForm.phone.focus();
 		return false;
 	}
 
-	if (isNaN(phone))  
+	if (isNaN(ph))  
 	{
 		alert("Please enter valid phone number");
 		document.myForm.phone.focus();
 		return false;
 	}
-	if (phone.length!=10)  
+	if (ph.length!=10)  
 	{
 		alert("Please enter 10 digit phone number");
 		document.myForm.phone.focus();
@@ -37,7 +38,12 @@ function validity() {
 
 	var officeNo=document.myForm.office.value;
 
-	
+	if (officeNo=="") 
+	{
+		alert("Please enter office number");
+		document.myForm.office.focus();
+		return false;
+	}
 
 	if(isNaN(officeNo))
 	{
@@ -57,7 +63,7 @@ function validity() {
 	var atpos = emailID.indexOf("@");
 	var dotpos = emailID.lastIndexOf(".");
 
-	if(atpos<1 || dotpos<atpos+2 || dotpos+2>=emailID.length || emailID.match(/\.{2}/) || emailID.match(/@@/g) || (emailID.match(/@/g).length )>1)
+	if(atpos<1 || dotpos<atpos+2 || dotpos>=emailID.length)
 	{
 		alert("Please enter valid Email ID");
 		document.myForm.email.focus();
@@ -65,74 +71,78 @@ function validity() {
 	}
 
 
-	var password=document.myForm.password1.value;
-	var confirmPassword=document.myForm.password2.value;
+	var pswd1=document.myForm.password1.value;
+	var pswd2=document.myForm.password2.value;
 
-	if(password=="")
+	if(pswd1=="")
 	{
 		alert("Please enter the password");
 		document.myForm.password1.focus();
 		return false;
 	}
 
-	if(password.length<8 || password.length>12)
+	if(pswd1.length<8 || pswd1.length>12)
 	{
 		alert("password must be of 8-12 characters");
 		document.myForm.password1.focus();
 		return false;
 	}
 
-	var alphaNumeric = /[^a-zA-Z0-9]/;
-	if(alphaNumeric.test(password)) 
-	{
+	if( /[^a-zA-Z0-9]/.test( pswd1 ) ) {
        alert("Please enter only alphanumeric password");
        document.myForm.password1.focus();
        return false;
     }
 
-	if(confirmPassword=="")
+	if(pswd2=="")
 	{
 		alert("Please re-enter the password");
 		document.myForm.password2.focus();
 		return false;
 	}
 
-	if(password!=confirmPassword)
+	if(pswd1!=pswd2)
 	{
 		alert("Please enter the same password as above");
 		document.myForm.password2.focus();
 		return false;
 	}
 
-	var month=document.myForm.month.value;
-	var day=document.myForm.day.value;
-	var year=document.myForm.year.value;
+	var mnth=document.myForm.month.value;
+	var dy=document.myForm.day.value;
+	var yr=document.myForm.year.value;
 
-	if(month=="-1")
+	if(Mnth=="-1")
 	{
 		alert("Please provide month of DOB");
 		document.myForm.month.focus();
 		return false;
 	}
 
-	if(day=="-1")
+	if(dy=="-1")
 	{
 		alert("Please provide day of DOB");
 		document.myForm.day.focus();
 		return false;
 	}
 
-	if(year=="-1")
+	if(yr=="-1")
 	{
 		alert("Please provide year of DOB");
 		document.myForm.year.focus();
 		return false;
 	}
 
-	var male = document.getElementById('residence1').checked;
-	var female = document.getElementById('residence2').checked;
 
-	if((male=="") && (female==""))
+	
+
+
+
+
+	var radio1 = document.getElementById('residence1').checked;
+	var radio2 = document.getElementById('residence2').checked;
+
+	if((radio1=="") && (radio2==""))
 	{
 		alert("Please select your gender");
 		return false;
@@ -155,30 +165,11 @@ function validity() {
 		document.myForm.about.focus();
 		return false;
 	}
-	else {
-		alert("Your form has been submited");
-		return true;
-	}
-}
 
 
 
 
-function ageVal()
-{
-	
-	var month=document.myForm.month.value;
-	var day=document.myForm.day.value;
-	var year=document.myForm.year.value;
-	if(!(month=="-1" || day=="-1" || year=="-1"))
-	{
-		var DOB = new Date(year,month,day);
-		var currrentDate = new Date();
-		var ageTemp = (currrentDate - DOB)/(1000 * 60 * 60 * 24 * 365.2425);
-		var age=Math.round(ageTemp * 10 ) / 10;
-		document.myForm.age.value=age;	
-	}
-		
+
 }
 
 
