@@ -99,7 +99,10 @@ $(document).ready(function(){
 
 	function check_office(){
 		var office_length = $("#form_office").val().length;
-		 if(office_length<6 ){
+		var officeNo = $("#form_office").val();
+		var officeCheck = /^\d{6}$/;
+		if(office_length>0){
+		 if(!(officeCheck.test(officeNo))){
 		 	$("#office_error").text("Enter Valid Office No");
 		 	$("#office_error").show();
 		 	error_office = true;
@@ -107,6 +110,9 @@ $(document).ready(function(){
 		 } else{
 		 	$("#office_error").hide();
 		 }
+		} else{
+			$("#office_error").hide();
+		}
 	}
 
 	function check_email(){
