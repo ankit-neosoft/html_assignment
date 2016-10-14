@@ -12,3 +12,31 @@
 .phone_fileds {
 	float: left;
 }
+
+.gender_fileds{
+	float: left;
+}
+
+.interest_fileds{
+	float: left;
+}
+
+.age_fileds{
+	float: left;
+}
+
+.pass_fileds{
+	float: left;
+}
+
+.about_you_fileds{
+	float: left;
+}
+
+.email_fileds{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}

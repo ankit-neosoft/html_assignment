@@ -137,7 +137,7 @@
 			<div class="contect_text">So we can successfully match your details with suitable people, we first need to collect some information about you. Read each question carfully and  select or place a tick in the box for each of your characteristics. Please answer as honestly as you can, otherwise you may be disappointed with your matches and they with you.</div>
 
 			<div class="form_container_block">
-				<form action="index.html" id="registration_form" name="myForm" method="post" onsubmit="return validity();">
+				<form  id="registration_form" name="myForm" action="index.html" method="post" ">
 
 				<ul>
 					<li class="fileds">
@@ -194,7 +194,7 @@
 
 								<ul>
 									<li>
-										<select name="month" class="select month" onchange="ageVal()">
+										<select name="months" class="select month" id="month" onchange="ageVal()">
 											<option value="-1" selected>Month</option>
 											<option value="1">Jan</option>
 											<option value="2">Feb</option>
@@ -211,7 +211,7 @@
 										</select>
 									</li>
 									<li>
-										<select name="day" class="select day" onchange="ageVal()">
+										<select name="day" class="select day" id="day" onchange="ageVal()">
 											<option value="-1" selected>Day</option>
 											<option value="1">01</option>
 											<option value="2">02</option>
@@ -250,7 +250,7 @@
 									</li>
 
 									<li>
-										<select name="year" class="select year" onchange="ageVal()">
+										<select name="year" class="select year" id="year" onchange="ageVal()">
 											<option value="-1" selected>Year</option>
 											<option value="70">1970</option>
 											<option value="71">1971</option>
@@ -286,12 +286,13 @@
 										</select>
 									</li>
 								</ul>
+								<p class="invalid" id="dob_error"></p>
 							</div>
 					</li>
 					<li class="fileds">
 						<div class="age_fileds">
 							<label>Age</label>
-							<input name="age" type="number" step="0.1" disabled /> 
+							<input name="age" type="number" id="age" step="0.1" disabled /> 
 						</div>
 						<div class="gender_fileds">
 							<label>Gender</label>
@@ -306,15 +307,18 @@
 						<div class="interest_fileds">
 						<label>Interest</label>
 							<ul>
-								<li><input type="checkbox" class="checkbox" id="checkbox_sample18" /> <label class="css-label" for="checkbox_sample18">Biking</label></li>
-								<li><input type="checkbox" class="checkbox" id="checkbox_sample19" /> <label class="css-label" for="checkbox_sample19">Reading</label></li>
-								<li><input type="checkbox" class="checkbox" id="checkbox_sample20" /> <label class="css-label" for="checkbox_sample20">Playing</label></li>
+								<li><input type="checkbox" class="checkbox" id="checkbox_sample18" name="checkbox1" /> <label class="css-label" for="checkbox_sample18">Biking</label></li>
+								<li><input type="checkbox" class="checkbox" id="checkbox_sample19"  name="checkbox1" /> <label class="css-label" for="checkbox_sample19">Reading</label></li>
+								<li><input type="checkbox" class="checkbox" id="checkbox_sample20"  name="checkbox1" /> <label class="css-label" for="checkbox_sample20">Playing</label></li>
 							</ul>
+							<p class="invalid" id="interest_error"></p>	
 						</div>
 						<div class="about_you_fileds">
 						<label>About you</label>
-						<textarea name="about"></textarea>
-						</div>						
+						<textarea id="form_about" name="about"></textarea>
+						<p class="invalid" id="about_error"></p>	
+						</div>	
+						<div class="clear"></div>					
 					</li>
 				</ul>
 				<div class="next_btn_block">
