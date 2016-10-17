@@ -62,24 +62,38 @@ $(document).ready(function(){
 
 	function check_firstname(){
 		var firstname_length = $("#form_firstname").val().length;
+		var firstname = $("#form_firstname").val();
+		var firstnamecheck = /^[a-zA-Z]+$/;
 		 if(firstname_length<2){
 		 	$("#firstname_error").text("Enter your valid First Name");
 		 	$("#firstname_error").show();
 		 	error_firstname = true;
 		 	return error_firstname;
-		 } else{
+		 } else if(!(firstnamecheck.test(firstname))){
+		 	$("#firstname_error").text("First Name should be alphabetic");
+		 	$("#firstname_error").show();
+		 	error_firstname = true;
+		 }
+		 else{
 		 	$("#firstname_error").hide();
 		 }
 	}
 
 	function check_lastname(){
 		var lastname_length = $("#form_lastname").val().length;
+		var lastname = $("#form_lastname").val();
+		var lastnamecheck = /^[a-zA-Z]+$/;
 		 if(lastname_length<2){
 		 	$("#lastname_error").text("Enter your valid Last Name");
 		 	$("#lastname_error").show();
 		 	error_lastname = true;
 		 	return error_lastname;
-		 } else{
+		 } else if(!(lastnamecheck.test(lastname))){
+		 	$("#lastname_error").text("Last Name should be alphabetic");
+		 	$("#lastname_error").show();
+		 	error_lastname = true;
+		 }
+		 else{
 		 	$("#lastname_error").hide();
 		 }
 	}
