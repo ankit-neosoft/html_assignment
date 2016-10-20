@@ -54,7 +54,13 @@ $(document).ready(function(){
 		check_about();
 	});
 
-	$("#month, #day, #year").on("change",function(){
+	$("#year").on("change",function(){
+		check_dob();
+	});
+	$("#month").on("change",function(){
+		check_dob();
+	});
+	$("#day").on("change",function(){
 		check_dob();
 	});
 
@@ -218,24 +224,25 @@ $(document).ready(function(){
 		var ageTemp = (currrentDate - DOB)/(1000 * 60 * 60 * 24 * 365.2425);
 		var age=Math.round(ageTemp * 10 ) / 10;
 
-		if((month=="-1" || day=="-1" || year=="-1"))
+		if(year=="-1" || month=="-1" || day=="-1" )
 	{
 		$("#dob_error").text("Provide your DOB");
 		 	$("#dob_error").show();
 		 	$("#age").val('');	
 		 	error_dob = true;
 		 	return error_dob;
-	}else {
+	}  else {
 		$("#age").val(age);	
 		$("#dob_error").hide();
 	}
 
 }
+
 	
 
 	
  $("#registration_form").submit(function(){
-  var	error_firstname = false;
+  	var error_firstname = false;
 	var	error_lastname = false;
 	var error_phone = false;
 	var error_password = false;
